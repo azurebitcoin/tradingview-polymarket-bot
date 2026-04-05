@@ -1,0 +1,2 @@
+EDGE_WEBHOOK_SECRET="replace-with-public-edge-secret"
+ORIGIN_WEBHOOK_SECRET="replace-with-private-origin-secret"

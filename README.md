@@ -138,6 +138,10 @@ Exit example:
 
 - `Dockerfile`
 - `docker-compose.yml`
+- `cloudflare-worker/src/index.js`
+- `cloudflare-worker/wrangler.jsonc`
+- `cloudflare-worker/.dev.vars.example`
+- `cloudflare-worker/package.json`
 - `deploy/systemd/tv-polymarket-bot.service`
 - `deploy/supervisor/tv-polymarket-bot.conf`
 - `deploy/windows/start-dry-run.ps1`
@@ -149,6 +153,7 @@ Exit example:
 - `deploy/ubuntu/update.sh`
 - `docs/RUNBOOK.md`
 - `.env.production.example`
+- `docs/CLOUDFLARE_WORKER_PROXY.md`
 - `docs/VPS_DEPLOYMENT_CHECKLIST.md`
 - `docs/NGINX_DEPLOYMENT.md`
 - `docs/UBUNTU_QUICKSTART.md`

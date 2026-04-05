@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "grant-browser-online",
+  "main": "src/index.js",
+  "compatibility_date": "2026-04-05",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "vars": {
+    "ORIGIN_BASE_URL": "https://your-vps-domain.example.com"
+  }
+}

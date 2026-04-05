@@ -1,0 +1,14 @@
+{
+  "name": "tradingview-polymarket-worker-proxy",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cloudflare Worker proxy for TradingView webhook delivery to the Polymarket bot backend.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.12.0"
+  }
+}
