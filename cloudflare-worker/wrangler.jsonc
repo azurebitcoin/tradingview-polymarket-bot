@@ -9,6 +9,6 @@
     "head_sampling_rate": 1
   },
   "vars": {
-    "ORIGIN_BASE_URL": "https://your-vps-domain.example.com"
+    "ORIGIN_BASE_URL": "https://azurebitcoin.info"
   }
 }

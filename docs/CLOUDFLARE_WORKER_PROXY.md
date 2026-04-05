@@ -23,7 +23,7 @@ Set the origin URL in `cloudflare-worker/wrangler.jsonc`:
 
 ```json
 "vars": {
-  "ORIGIN_BASE_URL": "https://your-vps-domain.example.com"
+  "ORIGIN_BASE_URL": "https://azurebitcoin.info"
 }
 ```
 
@@ -65,10 +65,10 @@ https://grant-browser-online.grant-browser-hub-a80397.workers.dev/webhooks/tradi
 
 ## Recommended Origin URL
 
-Use a VPS URL that is not your public TradingView URL, for example:
+Configured origin URL in this repo:
 
 ```text
-https://bot-origin.yourdomain.com
+https://azurebitcoin.info
 ```
 
 Then the Worker forwards:
@@ -78,7 +78,7 @@ Public:
 https://grant-browser-online.grant-browser-hub-a80397.workers.dev/webhooks/tradingview/<EDGE_WEBHOOK_SECRET>
 
 Origin:
-https://bot-origin.yourdomain.com/webhooks/tradingview/<ORIGIN_WEBHOOK_SECRET>
+https://azurebitcoin.info/webhooks/tradingview/<ORIGIN_WEBHOOK_SECRET>
 ```
 
 ## Notes
@@ -86,3 +86,4 @@ https://bot-origin.yourdomain.com/webhooks/tradingview/<ORIGIN_WEBHOOK_SECRET>
 - `workers.dev` is suitable as the public edge endpoint
 - for direct VPS TLS termination, keep a separate custom origin domain on the server
 - the Worker streams the incoming request body directly to the origin instead of buffering it into memory
+- make sure `https://azurebitcoin.info` resolves to your VPS backend and does not route back into the same Worker, otherwise you will create a proxy loop
