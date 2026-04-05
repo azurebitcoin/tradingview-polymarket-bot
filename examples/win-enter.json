@@ -1,0 +1,11 @@
+{
+  "action": "ENTER",
+  "alert_id": "dry-run-win-enter-001",
+  "market_slug": "demo-market-win",
+  "tv_symbol": "BTCUSD",
+  "condition_id": "0xdemo-condition-win",
+  "token_id": "0xtest0001",
+  "outcome": "YES",
+  "max_price": 0.99,
+  "note": "dry-run example winning entry"
+}

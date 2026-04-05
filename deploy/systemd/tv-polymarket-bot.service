@@ -1,0 +1,17 @@
+[Unit]
+Description=TradingView to Polymarket Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tradingview-polymarket-bot
+EnvironmentFile=/opt/tradingview-polymarket-bot/.env
+ExecStart=/opt/tradingview-polymarket-bot/.venv/bin/python /opt/tradingview-polymarket-bot/main.py
+Restart=always
+RestartSec=5
+User=botuser
+Group=botuser
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+{
+  "action": "ENTER",
+  "alert_id": "dry-run-enter-001",
+  "market_slug": "demo-market",
+  "tv_symbol": "BTCUSD",
+  "condition_id": "0xdemo-condition",
+  "token_id": "0xdeadbeef001",
+  "outcome": "YES",
+  "max_price": 0.72,
+  "note": "dry-run example entry"
+}
