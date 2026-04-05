@@ -16,7 +16,7 @@ sudo git clone https://github.com/azurebitcoin/tradingview-polymarket-bot tradin
 cd /opt/tradingview-polymarket-bot
 sudo cp .env.production.example .env
 sudo nano .env
-sudo DOMAIN=your-domain.com CERTBOT_EMAIL=you@example.com bash deploy/ubuntu/install_ubuntu_vps.sh
+sudo DOMAIN=grant-browser-online.grant-browser-hub-a80397.workers.dev CERTBOT_EMAIL=you@example.com bash deploy/ubuntu/install_ubuntu_vps.sh
 ```
 
 ## After The Script Finishes
@@ -36,13 +36,13 @@ sudo nginx -t
 Check health:
 
 ```bash
-curl https://your-domain.com/health
+curl https://grant-browser-online.grant-browser-hub-a80397.workers.dev/health
 ```
 
 Webhook URL:
 
 ```text
-https://your-domain.com/webhooks/tradingview/<WEBHOOK_SECRET>
+https://grant-browser-online.grant-browser-hub-a80397.workers.dev/webhooks/tradingview/<WEBHOOK_SECRET>
 ```
 
 ## Safe Go-Live Sequence
@@ -60,6 +60,7 @@ https://your-domain.com/webhooks/tradingview/<WEBHOOK_SECRET>
 
 - the install script creates `.venv`, installs requirements, registers `systemd`, enables nginx, and attempts HTTPS if `DOMAIN` and `CERTBOT_EMAIL` are provided
 - if you rerun the script after editing code locally, it resyncs the repository into `/opt/tradingview-polymarket-bot`
+- if you keep using a `workers.dev` hostname, treat it as the public edge URL; for direct `nginx + certbot` on the VPS, use a custom domain that points to the server
 
 ## Safe Redeploy After New Pushes
 

@@ -3,7 +3,7 @@
 ## URL
 
 ```text
-https://your-domain.com/webhooks/tradingview/<WEBHOOK_SECRET>
+https://grant-browser-online.grant-browser-hub-a80397.workers.dev/webhooks/tradingview/<WEBHOOK_SECRET>
 ```
 
 ## ENTER Alert Example

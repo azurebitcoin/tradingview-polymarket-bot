@@ -65,10 +65,12 @@ The progression advances only after an `EXIT` alert, because that is when the bo
 7. TradingView webhook URL:
 
    ```text
-   https://your-domain.com/webhooks/tradingview/<WEBHOOK_SECRET>
+   https://grant-browser-online.grant-browser-hub-a80397.workers.dev/webhooks/tradingview/<WEBHOOK_SECRET>
    ```
 
 TradingView expects a regular `POST` webhook endpoint. Its webhook help center documents JSON bodies, authentication considerations, retry behavior, and the platform constraints around destination ports and delivery behavior. Source: [TradingView webhook docs](https://www.tradingview.com/support/folders/43000560150/).
+
+If you proxy requests through Cloudflare Workers on a `workers.dev` hostname, keep in mind that the included VPS `nginx + certbot` templates are meant for a custom domain that resolves directly to your VPS origin.
 
 ## Live Trading Setup
 
